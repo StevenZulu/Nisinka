@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Nisinka General Dealers Balancing System</title>
+</head>
+<body>
+    <header>
+        <h1>Nisinka</h1>
+    </header> 
+
+    <main>
+        <div id="form-container">
+            <h1>hello, world</h1>
+            <div id="inputs-container">
+                <label for="openingCash">Opening Cash:</label> 
+                <input type="number" id="openingCash" placeholder="00.00"> <br>
+                <label for="airtelBalance">Airtel Balance:</label> 
+                <input type="number" id="airtelBalance" placeholder="00.00"> <br>
+                <label for="mtnBalance">MTN Balance:</label> 
+                <input type="number" id="mtnBalance" placeholder="00.00"> <br>
+                <label for="kazangBalance">Kazang:</label> 
+                <input type="number" id="kazangBalance" placeholder="00.00"> <br>
+                <label for="zanacoBalance">Zanaco:</label> 
+                <input type="number"  id="zanacoBalance" placeholder="00.00"> <br>
+                <label for="credits">Credits:</label> 
+                <input type="number" id="totalCredits" placeholder="00.00"> <br>
+                <input type="submit" id="submitBtn" value="Submit Data">
+            </div>
+        </div>
+
+        <div id="results-container">
+            <table>
+
+                <tbody>
+                    <tr>
+                        <td>Opening Cash</td>
+                        <td id="opening-cash">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Airtel Money</td>
+                        <td id="airtel">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>MTN Money </td>
+                        <td id="mtn">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kazang</td>
+                        <td id="kazang">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Zanaco</td>
+                        <td id="zanaco">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total Credits</td>
+                        <td id="credits">00.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Closing Cash</td>
+                        <td id="closingCash">00.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="prevBtn">Back To Previous Screen</button>
+        </div>
+    </main>
+
+    <footer>
+        <p><small>Programmed & Designed by <a href="https://stevensanie.netlify.app" target="_blank"> StevenSanie </a></small></p>
+        <p>&copy; 2021 Nisinka General Dealers</p>
+    </footer>
+    <script src="./script/index.js"></script>
+</body>
+</html>
