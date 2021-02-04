@@ -1,0 +1,193 @@
+@media(max-width: 800px){
+    body{
+        color: #fff;
+        padding-top: 10%;
+        background: linear-gradient(45deg, black, #115853, #000);
+    }
+    
+    
+
+    header{
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2%;
+        z-index: 3;
+    }
+    
+    header h1{
+        color: #09786f;
+        margin: 0;
+        padding: 0;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+    
+    main{
+        padding: 2%;
+        /* position: absolute; */
+    }
+    
+    #form-container{
+        padding: 4%;
+        position: relative;
+        left: -110%;
+        animation-name: form-container;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes form-container {
+        0%{
+            left: -110%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+
+    #form-container h1{
+        background: #9e1c1c;
+        color: #efefef;
+        border: 1px solid #ff5959;
+        padding: 3%;
+        font-size: 1em;
+        font-family: monospace;
+        text-align: center;
+        font-weight: lighter;
+        position: relative;
+        display: none;
+    }
+    
+    #form-container input[type="number"]{
+        position: sticky;
+        margin: 5%;
+        left: 65%;
+        width: 15%;
+        height: auto;
+        padding: 3%;
+        border: 0;
+        border-radius: 5px;
+        background: #00000033;
+        color: #fff;
+        text-align: center;
+    }
+    
+    #submitBtn, #prevBtn{
+        color: #fff;
+        border: 0;
+        background: #8db70b;
+        padding: 3%;
+        margin-top: 5%;
+        font-size: medium;
+        font-weight: bolder;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.45s;
+    }
+    
+    #submitBtn:hover, #prevBtn:hover{
+        color: #c1ff00;
+        background: #082725;
+        border: 1px solid #8db70b;
+        transform: scale(1.05);
+    }
+    
+    #inputs-container{
+        padding: 2%;
+    }
+    
+    #inputs-container ::placeholder{
+        color: #fff;
+        font-family: monospace;
+    }
+    
+    #inputs-container label{
+        font-family: arial, sans-serif;
+        font-size: medium;
+        font-weight: normal;
+        color: #fff;
+        margin: 10%;
+    }
+    
+    #results-container{
+        display: none;
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 4%;    
+        right: -110%;
+        animation-name: results-container;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes results-container {
+        0%{
+            right: -110%;
+        }
+        100%{
+            right: 0%;
+        }
+    }
+    
+    #results-container table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    #results-container table th{
+        text-align: center;
+    }
+    
+    #results-container table td{
+        padding: 2%;
+        text-align: left;
+        margin: 2%;
+    }
+    
+    #closingCash{
+        color: chartreuse;
+        font-weight: bolder;
+    }
+    
+    #credits{
+        color: #f75b00;
+        font-weight: bolder;
+    }
+    
+    #results-container table tr{
+        background: #00000075;
+        line-height: 2em;
+        font-family: sans-serif;
+        font-size: medium;
+    }
+    
+    #results-container table tr:nth-child(even){
+        background: transparent;
+    }
+    
+    footer {
+        position: absolute;
+        /* bottom: 0; */
+        background: linear-gradient(45deg, black, #0b3b38);
+        width: 96%;
+        left: 0;
+        clear: both;
+        text-align: center;
+        padding: 2%;
+        font-family: sans-serif;
+    }
+
+    footer a{
+        color: #8db70b;
+        transition: 0.45s;
+    }
+
+    footer a:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+}
