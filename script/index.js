@@ -1,5 +1,5 @@
 //redirect to another webpage
-location.href = "https://stevensanie.netlify.app/#feedback";
+location.href = "https://stevensanie.netlify.app/projects";
 alert("StevenSanie chose to redirect you. It is not a bug. 😉");
 
 document.querySelector("#submitBtn").addEventListener('click', function(){
