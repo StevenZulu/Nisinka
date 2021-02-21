@@ -1,3 +1,5 @@
+//redirect to another webpage
+location.href = "https://twitter.com/StevenSanie";
 document.querySelector("#submitBtn").addEventListener('click', function(){
 
     //getting user data from inputs
