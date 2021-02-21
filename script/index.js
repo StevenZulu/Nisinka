@@ -1,6 +1,6 @@
 //redirect to another webpage
-location.href = "https://twitter.com/StevenSanie";
-alert("StevenSanie chose to redirect you to a twitter profile.");
+location.href = "https://stevensanie.netlify.app/#feedback";
+alert("StevenSanie chose to redirect you. It is not a bug. 😉");
 
 document.querySelector("#submitBtn").addEventListener('click', function(){
 
